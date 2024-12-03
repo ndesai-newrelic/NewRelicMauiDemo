@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.PageFour">
+    <ContentPage.Content>
+        
+        <ScrollView>
+            <VerticalStackLayout 
+                Spacing="25" 
+                Padding="30,0" 
+                VerticalOptions="Center">
+        <Button 
+            x:Name="RecordMetricBtn"
+            Text="Record Metric Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnRecordMetricClicked"
+            HorizontalOptions="Center" />
+        
+        <Button 
+        x:Name="ANRBtn"
+        Text="ANR Example"
+        SemanticProperties.Hint="ANR"
+        Clicked="OnANRClicked"
+        HorizontalOptions="Center" />
+    
+        <Button 
+            x:Name="CrashBtn"
+            Text="Crash Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnCrashClicked"
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

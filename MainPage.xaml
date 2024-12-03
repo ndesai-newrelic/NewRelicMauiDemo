@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+			 
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+                
+            <Label 
+                Text="Hello, NewRelic Agent Demo!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label 
+                Text="Welcome to .NET NewRelic Agent UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="setUserIdBtn"
+                Text="Set User ID"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnSetUserIdtClicked"
+                HorizontalOptions="Center" />
+
+            <Button 
+                x:Name="LogsBtn"
+                Text="Send Logs"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="BreadCrumbBtn"
+                Text="Record BreadCrumb"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnRecordBreadCrumbClicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="RecordCustomEventBtn"
+                Text="Record Custom Event"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnRecordCustomEventClicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="setAttributeBtn"
+                Text="Set Attribute"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnSetAttributetClicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="NextPageBtn"
+                Text="Next Page"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnNextPageClicked"
+                HorizontalOptions="Center" />
+            
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+ 
+</ContentPage>

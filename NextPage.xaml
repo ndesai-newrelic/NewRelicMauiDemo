@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NextPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout 
+                Spacing="25" 
+                Padding="30,0" 
+                VerticalOptions="Center">
+        <Button 
+            x:Name="HttpRequestdBtn"
+            Text="HttpRequest Success Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnHttpRequestSuccessClicked"
+            HorizontalOptions="Center" />
+
+        <Button 
+            x:Name="HttpRequestErrorBtn"
+            Text="HttpRequest Error Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnHttpRequestFailureClicked"
+            HorizontalOptions="Center" />
+            
+        <Button 
+            x:Name="InterActionBtn"
+            Text="Interaction Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnInterActionClicked"
+            HorizontalOptions="Center" />
+            
+        <Button 
+            x:Name="RecordCustomHandledExceptionBtn"
+            Text="Record Handled Exception Example"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnHandledExcpetionClicked"
+            HorizontalOptions="Center" />
+        
+        <Button 
+            x:Name="OnPageThreeBtn"
+            Text="Go To Page Three"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnPagethreeClicked"
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
